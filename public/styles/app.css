@@ -61,9 +61,18 @@ body {
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: normal; }
 
+h4 {
+  font-size: 8rem;
+  line-height: 8rem; }
+
+h3 {
+  font-size: 3.6rem;
+  line-height: 4.6rem; }
+
 h5 {
   color: #70c6ac;
-  font-weight: 500; }
+  font-weight: 600;
+  text-transform: uppercase; }
   h5 .heart {
     color: #FF5722; }
 
@@ -132,7 +141,9 @@ ul {
   .section.hero .logo img {
     height: 2em; }
   .section.hero .hero-heading {
-    font-weight: 400; }
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 120px 0 0 0; }
 
 .section.footer {
   background-color: #444;

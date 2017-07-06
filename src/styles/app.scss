@@ -25,10 +25,20 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing: normal;
 }
 
+h4 {
+  font-size: 8rem;
+  line-height: 8rem;
+}
+
+h3 {
+  font-size: 3.6rem;
+  line-height: 4.6rem;
+}
+
 h5 {
   color: #70c6ac;
-  font-weight: 500;
-  
+  font-weight: 600;
+  text-transform: uppercase;
   .heart { color: #FF5722; }
 }
 
@@ -119,10 +129,9 @@ ul {
     }
     
     .hero-heading {
-      // margin-bottom: .2em;
-      // text-transform: uppercase;
-      font-weight: 400;
-      // color: rgba(#fff, .75);
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 120px 0 0 0;
     }
   }
   
