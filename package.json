@@ -1,0 +1,11 @@
+{
+  "name": "tandemly",
+  "version": "1.0.0",
+  "description": "Tandem.ly web site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Atchley, david.atchley@tandem.ly",
+  "license": "ISC"
+}
