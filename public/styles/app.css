@@ -76,6 +76,14 @@ h5 {
   h5 .heart {
     color: #FF5722; }
 
+.footer h6 {
+  color: #ddd;
+  margin-bottom: .2em; }
+
+a, a:visited, a:link {
+  text-decoration: none;
+  color: #9bca3b; }
+
 ul {
   position: relative;
   list-style-type: none;
@@ -151,6 +159,18 @@ ul {
   padding: 45px 15px;
   min-height: 150px;
   position: relative; }
+  .section.footer p {
+    font-weight: 200 !important;
+    font-size: .9em !important; }
+  .section.footer address {
+    font-size: .9em;
+    font-weight: 200; }
+  .section.footer .oci-logo {
+    height: 1.2em;
+    vertical-align: middle; }
+  .section.footer .footer-logo {
+    height: 2em;
+    opacity: .7; }
   .section.footer::before {
     content: '';
     background: url(../images/brush-stripe-white.svg) no-repeat top left/100%;
