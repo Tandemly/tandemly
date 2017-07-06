@@ -112,12 +112,12 @@ ul {
     border-radius: 2px;
     font-size: 1em;
     font-weight: 300;
-    background-color: #70c6ac;
-    border-color: #70c6ac;
+    background-color: #9bca3b;
+    border-color: #9bca3b;
     color: #fff; }
     .button.button-primary:hover {
-      background-color: #4cb797;
-      border-color: #4cb797; }
+      background-color: #7ea52d;
+      border-color: #7ea52d; }
 
 /*
  Sections
@@ -149,9 +149,18 @@ ul {
   .section.hero .logo img {
     height: 2em; }
   .section.hero .hero-heading {
+<<<<<<< 3d1391ae401cf3918ed9cc93ab8e0a96e7351fe1
     text-transform: uppercase;
     font-weight: bold;
     padding: 120px 0 0 0; }
+=======
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: 2.25em; }
+  .section.hero .lead {
+    font-size: 1.25em; }
+>>>>>>> fix: updates to hero headings
 
 .section.footer {
   background-color: #444;

@@ -104,14 +104,14 @@ ul {
     border-radius: 2px;
     font-size: 1em;
     font-weight: 300;
-    background-color: $teal;
-    border-color: $teal;
+    background-color: $green;
+    border-color: $green;
     color: #fff;
     // text-shadow: -1px -1px 0 darken($teal, 10%);
 
     &:hover {
-      background-color: darken($teal, 10%);
-      border-color: darken($teal, 10%);   
+      background-color: darken($green, 10%);
+      border-color: darken($green, 10%);   
     }
   }
 }
@@ -162,12 +162,25 @@ ul {
     }
     
     .hero-heading {
+<<<<<<< 3d1391ae401cf3918ed9cc93ab8e0a96e7351fe1
       text-transform: uppercase;
       font-weight: bold;
       padding: 120px 0 0 0;
       @media (max-width: 1200px) {
         padding: 60px 0 0 0;
       }
+=======
+      // margin-bottom: .2em;
+      // text-transform: uppercase;
+      font-weight: 400;
+      // color: rgba(#fff, .75);
+      text-transform: uppercase;
+      margin-bottom: 0;
+      font-size: 2.25em;
+    }
+    .lead {
+        font-size: 1.25em;
+>>>>>>> fix: updates to hero headings
     }
   }
   
