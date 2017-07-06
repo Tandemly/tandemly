@@ -1,0 +1,163 @@
+@import 'colors.scss';
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,600,700');
+
+// Font-Size
+$base-font-size: 1em;
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Fira Sans';
+  font-weight: 300;
+  color: $black;
+  background-color: #444;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 560px) {
+	body { -webkit-text-size-adjust: none; }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  letter-spacing: normal;
+}
+
+h5 {
+  color: #70c6ac;
+  font-weight: 500;
+  
+  .heart { color: #FF5722; }
+}
+
+ul {
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+  li {
+    position: relative;
+    padding-left: 24px;
+    font-size: .9em;
+    
+    &::before {
+      height: 6px;
+      width: 6px;
+      background-color: $teal;
+      border-radius: 50%;
+      content: "";
+      display: inline-block;
+      margin-bottom: 2px;
+      margin-right: 8px;
+      position: absolute;
+      top: 8px;
+      left: 10px;
+    }
+  }
+}
+
+// Customize buttons from skeleton
+.button {
+  font-size: 14px;
+  
+  &.button-primary {
+    border-radius: 2px;
+    font-size: 1em;
+    font-weight: 300;
+    background-color: $teal;
+    border-color: $teal;
+    color: #fff;
+    // text-shadow: -1px -1px 0 darken($teal, 10%);
+
+    &:hover {
+      background-color: darken($teal, 10%);
+      border-color: darken($teal, 10%);   
+    }
+  }
+}
+
+/*
+ Sections
+---------------------------------------------*/
+.section {
+  &.info {
+      background-color: #fff;
+    .heading {
+      text-transform: uppercase;
+      font-weight: 700;
+      .fa-heart { color: #ff3c41; }
+    }
+  }
+  
+  &.hero {
+    position: relative;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    margin: 0;
+    background: $orange;
+    background: url(../images/logo-t-semi-opaque.svg) no-repeat top -20px right -20px / auto 110%, 
+      linear-gradient(to right, $orange, lighten($orange, 20));
+    
+    &::after {
+      content: '';
+      background: url(../images/brush-stripe-white.svg) no-repeat top left/100%;
+      height: 80px;
+      width: 100%;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+    
+    .logo {
+      img {
+        height: 2em;
+      }
+    }
+    
+    .hero-heading {
+      // margin-bottom: .2em;
+      // text-transform: uppercase;
+      font-weight: 400;
+      // color: rgba(#fff, .75);
+    }
+  }
+  
+  &.footer {
+    background-color: #444;
+    color: #9E9E9E;
+    padding: 45px 15px;
+    min-height: 150px;
+    position: relative;
+    
+    &::before {
+      content: '';
+      background: url(../images/brush-stripe-white.svg) no-repeat top left/100%;
+      height: 80px;
+      width: 100%;
+      position: absolute;
+      top: -8px;
+      left: 0;
+      transform: scaleY(-1);
+    }
+  }
+}
+
+
+// Default section alignment (mobile first)
+.hero {
+  text-align: center;
+}
+
+// Section alignment - larger than mobile
+@media (min-width: 320px) {}
+@media (min-width: 550px) {
+  .hero {
+    text-align: left;
+  }
+}
+@media (min-width: 750px) {}
+@media (min-width: 1000px) {}

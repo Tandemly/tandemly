@@ -1,0 +1,43 @@
+.text-gradient-orange-blue {
+  color: #f05824;
+  background: linear-gradient(to right, #f05824, #4654a2 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent; }
+
+.bg-gradient-orange-blue {
+  background-color: #fff;
+  background: linear-gradient(to right, rgba(240, 88, 36, 0.15), rgba(70, 84, 162, 0.15) 80%); }
+
+.text-gradient-blue-teal {
+  color: #4654a2;
+  background: linear-gradient(to right, #4654a2, #70c6ac 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent; }
+
+.bg-gradient-blue-teal {
+  background-color: #fff;
+  background: linear-gradient(to right, rgba(70, 84, 162, 0.15), rgba(112, 198, 172, 0.15) 80%); }
+
+.text-gradient-teal-green {
+  color: #70c6ac;
+  background: linear-gradient(to right, #70c6ac, #9bca3b 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent; }
+
+.bg-gradient-teal-green {
+  background-color: #fff;
+  background: linear-gradient(to right, rgba(112, 198, 172, 0.15), rgba(155, 202, 59, 0.15) 80%); }
+
+.text-gradient-green-orange {
+  color: #9bca3b;
+  background: linear-gradient(to right, #9bca3b, #f05824 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent; }
+
+.bg-gradient-green-orange {
+  background-color: #fff;
+  background: linear-gradient(to right, rgba(155, 202, 59, 0.15), rgba(240, 88, 36, 0.15) 80%); }

@@ -1,0 +1,45 @@
+@mixin text-gradient ($from, $to) {
+  color: $from;
+  background: linear-gradient(to right, $from, $to 50%); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;  
+}
+@mixin bg-gradient ($from, $to, $opacity: 0) {
+  background-color: #fff;
+  background: linear-gradient(to right, transparentize($from, 1 - $opacity), transparentize($to, 1 - $opacity) 80%); 
+}
+
+$orange: rgba(240, 88, 36, 1);
+$blue: rgba(70, 84, 162, 1);
+$teal: rgba(112, 198, 172, 1);
+$green: rgba(155, 202, 59, 1);
+$darkgray: #999999;
+$gray: #dddddd;
+$lightgray: #eeeeee;
+$black: #444444;
+
+.text-gradient-orange-blue {
+  @include text-gradient($orange, $blue);
+}
+.bg-gradient-orange-blue {
+  @include bg-gradient($orange, $blue, .15);
+}
+.text-gradient-blue-teal {
+  @include text-gradient($blue, $teal);
+}
+.bg-gradient-blue-teal {
+  @include bg-gradient($blue, $teal, .15);
+}
+.text-gradient-teal-green {
+  @include text-gradient($teal, $green);
+}
+.bg-gradient-teal-green {
+  @include bg-gradient($teal, $green, .15);
+}
+.text-gradient-green-orange {
+  @include text-gradient($green, $orange);
+}
+.bg-gradient-green-orange {
+  @include bg-gradient($green, $orange, .15);
+}
