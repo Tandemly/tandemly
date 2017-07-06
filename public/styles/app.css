@@ -51,7 +51,8 @@ html {
 body {
   font-family: 'Fira Sans';
   font-weight: 300;
-  color: #444444; }
+  color: #444444;
+  background-color: #444; }
 
 @media only screen and (min-width: 320px) and (max-width: 560px) {
   body {
@@ -104,11 +105,13 @@ ul {
 /*
  Sections
 ---------------------------------------------*/
-.section.info .heading {
-  text-transform: uppercase;
-  font-weight: 700; }
-  .section.info .heading .fa-heart {
-    color: #ff3c41; }
+.section.info {
+  background-color: #fff; }
+  .section.info .heading {
+    text-transform: uppercase;
+    font-weight: 700; }
+    .section.info .heading .fa-heart {
+      color: #ff3c41; }
 
 .section.hero {
   position: relative;
