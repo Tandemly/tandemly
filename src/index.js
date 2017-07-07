@@ -1,5 +1,41 @@
+/* eslint-disable no-unused-vars */
 /**
  * index.js
  */
 
 console.log("JavaScript is amazing!");
+
+const hero = document.querySelector('.hero .container_full');
+const fixed_cta = document.querySelector('.fixed-scroll-header');
+const pos = hero.offsetHeight;
+const scroll = window.requestAnimationFrame;
+
+const removeClass = (el, className) => {
+    if (el.classList)
+        el.classList.remove(className);
+    else
+        el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+}
+
+const addClass = (el, className) => {
+    if (el.classList)
+        el.classList.add(className);
+    else
+        el.className += ' ' + className;
+}
+
+const loop = () => {
+    if (window.pageYOffset >= pos && /slide-up/.test(fixed_cta.className)) {
+        removeClass(fixed_cta, 'slide-up');
+        addClass(fixed_cta, 'slide-down');
+    }
+    if (window.pageYOffset < pos && /slide-down/.test(fixed_cta.className)) {
+        removeClass(fixed_cta, 'slide-down');
+        addClass(fixed_cta, 'slide-up');
+    }
+    scroll(loop);
+}
+
+loop();
+
+
