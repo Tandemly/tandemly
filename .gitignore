@@ -3,5 +3,6 @@ node_modules
 .DS_Store
 build
 
-public/styles/*.css
-!public/styles/vendor/*.css
+public/styles/colors.css
+public/styles/app.css
+!public/styles/vendor
