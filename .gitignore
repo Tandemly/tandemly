@@ -2,7 +2,3 @@ node_modules
 .vscode
 .DS_Store
 build
-
-public/styles/colors.css
-public/styles/app.css
-!public/styles/vendor
