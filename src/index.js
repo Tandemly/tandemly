@@ -1,9 +1,16 @@
-/* eslint-disable no-unused-vars */
 /**
  * index.js
  */
 
-console.log("JavaScript is amazing!");
+if (typeof console === 'object') {
+    console.log('\n' +
+        '  |\\      _,,,,--,,_       Hey there!  We\'re glad you\'re curious about our code.\n' +
+        '  /,`.-\'`\'    -,  \\-;,     We\'d love to chat with you about what you\'re working on\n' +
+        ' |,4-  ) ),,__ ,\\ (  ;;    and see how you could help us improve!\n' +
+        ' ---\'\'(.\'--\'  `-\'`.)`               -- hireme@tandem.ly\n' +
+        '\n'
+    );
+}
 
 const hero = document.querySelector('.hero .container_full');
 const fixed_cta = document.querySelector('.fixed-scroll-header');

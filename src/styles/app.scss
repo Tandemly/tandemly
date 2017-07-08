@@ -119,6 +119,35 @@ ul {
     text-align: center;
     padding: 4px;
     transition: .5s ease all;
+    box-shadow: 0px 4px 19px -6px rgba(0,0,0,0.16);
+}
+
+.content-img {
+    margin-bottom: 2em;
+    float: left;
+
+    img {
+        width: 100%;
+    }
+}
+
+.content-bg-right {
+    margin-bottom: 2em;
+    position: absolute;
+    left: 5%;
+    height: 50%;
+    @media (min-width: 550px) {
+        left: 50%;
+        height: 100%;
+    }
+    left: 5%;
+    bottom: 0%;
+    opacity: .1;
+
+    img {
+        width: auto;
+        height: 100%;
+    }
 }
 
 /*
@@ -126,8 +155,11 @@ ul {
 ---------------------------------------------*/
 .section {
   &.info {
+      position: relative;
       background-color: #fff;
       padding-bottom: 40px;
+      overflow: hidden;
+
     .heading {
       text-transform: uppercase;
       font-weight: 700;
