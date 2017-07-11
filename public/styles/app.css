@@ -171,7 +171,7 @@ ul {
 .section.info {
   position: relative;
   background-color: #fff;
-  padding-bottom: 40px;
+  padding: 30px 0 40px 0;
   overflow: hidden; }
   .section.info .heading {
     text-transform: uppercase;
