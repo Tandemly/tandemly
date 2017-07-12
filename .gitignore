@@ -5,3 +5,4 @@ build
 package-lock.json
 package.json
 *.css
+public/styles/app.css
