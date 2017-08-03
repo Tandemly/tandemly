@@ -4,6 +4,4 @@ node_modules
 build
 package-lock.json
 package.json
-*.css
-public/styles/app.css
-public/styles/colors.css
+public/styles/*.css
