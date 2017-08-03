@@ -44,6 +44,11 @@ $white: #fff;
     transition: background .3s linear;
     // background: linear-gradient(to right, rgba($color_atlantis_approx, .8), rgba($color_yellow_green_approx, .8));
 
+	&.on-white {
+		background: linear-gradient(to right, #9bca3b, #80cbc4);
+		box-shadow: 0 2px 4px -1px #607D8B;
+		transition: background .3s linear;
+	}
 }
 @media print {
 	#header {

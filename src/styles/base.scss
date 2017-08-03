@@ -5,6 +5,7 @@
 // Font-Size
 $base-font-size: 1em;
 
+html,body { height: 100%; }
 html {
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -12,10 +13,10 @@ html {
 }
 
 body {
-  font-family: 'Fira Sans';
-  font-weight: 300;
-  color: $black;
-  background-color: #fff;
+    font-family: 'Fira Sans';
+    font-weight: 300;
+    color: $black;
+    background-color: #fff;
 }
 
 a, a:visited, a:link {
@@ -34,10 +35,28 @@ h1,h2,h3,h4,h5,h6 {
 .section h3 {
     color: #277f83;
     font-weight: 400;
+    &.page-heading {
+        position: relative;
+        text-align: center;
+        color: #a0bbbc;
+
+        &::before {
+            background: #ae3378;
+            bottom: 0;
+            content: '';
+            height: 3px;
+            left: 50%;
+            margin-left: -8.5px;
+            opacity: .6;
+            position: absolute;
+            width: 25px;
+        }
+    }
 }
 .section h5  {
     color: #95b25b;
 }
+
 
 .hide { display: none }
 .slide-up { top: -60px !important; }
@@ -45,6 +64,17 @@ h1,h2,h3,h4,h5,h6 {
 .centered { text-align: center; }
 
 p.primary { font-size: 1.2em; }
+
+p.quote {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 400;
+    color: #95b25b;
+}
+p.page-leader {
+    font-size: 1.4em; 
+    font-weight: 200;
+}
 
 @media (max-width: 550px) {
     p.primary { font-size: 1em; }
