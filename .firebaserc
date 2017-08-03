@@ -1,5 +1,6 @@
 {
   "projects": {
-    "test": "tandemly-web-site"
+    "default": "tandemly-web-site",
+    "staging": "tandemly-testing"
   }
 }

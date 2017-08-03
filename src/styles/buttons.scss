@@ -1,0 +1,57 @@
+@import 'colors.scss';
+
+// Customize buttons from skeleton
+.button {
+    font-size: 14px;
+    height: auto;
+    border-width: 2px;
+
+    &.small {
+        font-size: .8em;
+        padding: 10px;
+        line-height: .9em;
+        margin: 0;
+        font-weight: 400;
+        border-radius: 2px;
+    }
+
+    &.button-primary {
+        font-size: 1em;
+        font-weight: 400;
+        transition: all 0.3s ease;
+        background-color: $purple; 
+        border-color: $purple;
+        border-radius: 2px;
+        color: #fff;
+
+        &:hover {
+        transition: all 0.3s ease;
+        background-color: lighten($purple, 20);
+        border-color: lighten($purple, 20);
+        color: #fff;
+        }
+        &:focus {
+        background-color: darken($purple, 20);
+        border-color: darken($purple, 20);
+        color: #fff;
+        }
+    }
+
+    &.button-primary-outline {
+        background-color: transparent;
+        border-color: $purple;
+        color: $purple;
+
+        &:hover {
+            transition: all 0.3s ease;
+            background-color: $purple;
+            border-color: $purple;
+            color: #fff;
+        }
+        &:focus {
+            background-color: lighten($purple, 20);
+            border-color: lighten($purple, 20);
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,96 @@
+// Base Styles for site
+//---------------------------------------------------------------------------
+@import 'colors.scss';
+
+// Font-Size
+$base-font-size: 1em;
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Fira Sans';
+  font-weight: 300;
+  color: $black;
+  background-color: #fff;
+}
+
+a, a:visited, a:link {
+    text-decoration: none;
+    color: $green;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 560px) {
+	body { -webkit-text-size-adjust: none; }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  letter-spacing: normal;
+}
+
+.section h3 {
+    color: #277f83;
+    font-weight: 400;
+}
+.section h5  {
+    color: #95b25b;
+}
+
+.hide { display: none }
+.slide-up { top: -60px !important; }
+.slide-down { top: 0px !important; }
+.centered { text-align: center; }
+
+p.primary { font-size: 1.2em; }
+
+@media (max-width: 550px) {
+    p.primary { font-size: 1em; }
+}
+
+.row.as-equal-height {
+    position: relative;
+    display: table;
+    width: 100%;
+
+    .column,
+    .columns {
+        position: relative;
+        display: table-cell;
+        float: none;
+        padding-left: 4%;
+
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+}
+
+ul.list {
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+  li {
+    position: relative;
+    padding-left: 24px;
+    // font-size: .9em;
+    
+    &::before {
+      height: 6px;
+      width: 6px;
+      background-color: $purple;
+      border-radius: 50%;
+      content: "";
+      display: inline-block;
+      margin-bottom: 2px;
+      margin-right: 8px;
+      position: absolute;
+      top: 8px;
+      left: 10px;
+    }
+  }
+}

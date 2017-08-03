@@ -10,14 +10,26 @@
   background: linear-gradient(to right, transparentize($from, 1 - $opacity), transparentize($to, 1 - $opacity) 80%); 
 }
 
-$orange: rgba(240, 88, 36, 1);
+$orange: rgba(244, 130, 91, 1);
 $blue: rgba(70, 84, 162, 1);
 $teal: rgba(112, 198, 172, 1);
 $green: rgba(155, 202, 59, 1);
+$purple: rgba(163,62,119,1);
+
 $darkgray: #999999;
 $gray: #dddddd;
 $lightgray: #eeeeee;
-$black: #444444;
+$black: #666770;
+
+//colors
+$color_tundora_approx: #444444;
+$color_atlantis_approx: #9bca3b;
+$color_bon_jour_approx: #e1e1e1;
+$color_paradiso_approx: #277f83;
+$color_yellow_green_approx: #c4e08b;
+$color_conifer_approx: #b9e562;
+$color_royal_heath_approx: #ae3378;
+$white: #fff;
 
 .text-gradient-orange-blue {
   @include text-gradient($orange, $blue);
