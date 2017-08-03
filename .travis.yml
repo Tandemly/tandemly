@@ -3,6 +3,9 @@ language: node_js
 before_script:
 - npm install -g eslint
 
+before_deploy:
+  - npm run build
+
 node_js:
   - "6"
   - "stable"
