@@ -2,6 +2,7 @@
 @import 'base.scss';
 @import 'buttons.scss';
 @import 'global-nav.scss';
+@import 'util.scss';
 
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,600,700');
 
@@ -10,13 +11,6 @@
   @media (max-width: 550px) {
     padding: 0 20px;
   }
-}
-
-.footer { 
-    h6 {
-        color: #ddd;
-        margin-bottom: .2em;
-    }
 }
 
 /*
@@ -48,39 +42,107 @@ label {
  Sections
 ---------------------------------------------*/
 
-//
-// Brush stroked, full width section classes and mixin
-//
-.brushed-top {
-  &::before {
-    content: '';
-    background: url(../images/brush-stripe-white.svg) no-repeat top left/100%;
-    height: 80px;
-    width: 100%;
-    position: absolute;
-    top: -8px;
-    left: 0;
-    transform: scaleY(-1) scaleX(-1);
-  }
+section.hero {
+    color: #fff;
+    background: $green;
+    background: url(../images/logo-t-semi-opaque.svg) no-repeat top -20px right -20px / auto 110%, linear-gradient(to right, $green, #80cbc4);
+
+    @media (max-width: 550px) {
+      padding-top: 90px;
+      padding-bottom: 80px;
+      background: url(../images/logo-t-semi-opaque.svg) no-repeat top -20px right -20px / auto 110%, linear-gradient(to right, $green, #80cbc4);
+
+      .cta { text-align: center; }
+    }
+
+    &::after {
+      content: '';
+      background: url(../images/brush-stripe-white.svg) no-repeat top left/100%;
+      height: 80px;
+      width: 100%;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+    
+    .logo {
+      img {
+        height: 2em;
+        margin-bottom: 4em;
+      }
+    }
+    
+    .hero-heading {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 6rem;
+      line-height: 6rem;
+      margin-bottom: 0;
+    }
+
+    .lead {
+        font-size: 1.5em;
+        line-height: 1.2;
+        font-weight: 100;
+    }
+
 }
 
-.brushed-bottom {
-  &::after {
-    content: '';
-    background: url(../images/brush-stripe-white.svg) no-repeat top left/100%;
-    height: 80px;
-    width: 100%;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-  }
+section.page-top h3 {
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: .5;
 }
 
-@mixin brushed($bgcolor) {
-  @extend .brushed-top;
-  @extend .brushed-bottom;
-  background-color: $bgcolor;
-  padding: 50px 0;
+.hireus-form-container {
+  position: relative;
+
+  form {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+
+    h5 {
+      color: #d2dfdf;
+      font-weight: 400;
+    }
+
+    input[type=text] {
+      outline: none;
+      border-radius: 0;
+      border: none;
+      border-bottom: 1px solid #F5F5F5;
+      width: 100%;
+      margin: 0;
+      background: transparent;
+
+      &:focus {
+        border-color: $white;
+        border-width: 2px;
+      }
+    }
+    label {
+      font-weight: 400;
+      color: #d2dfdf;
+    }
+
+    &.on-white {
+      h5 { color: inherit; }
+      input[type=text] {
+        border-bottom: 1px solid #999;
+        &:focus {
+          border-color: $black;
+          border-width: 2px;
+        }
+      }
+      label {
+        color: inherit;
+      }
+    }
+  }
 }
 
 .section {
@@ -91,6 +153,16 @@ label {
 
   &.first { 
     padding-top: 90px;
+  }
+
+  &.services {
+    @include brushed(#a0bbbc);
+    p { 
+      font-size: 2em; 
+      font-weight: 200;
+      color: #deecec;
+      margin: 2em 0;
+    }
   }
 
   &.whatwedo {
@@ -151,100 +223,6 @@ label {
       button {
         float: right;
       }
-    }
-  }
-  
-  &.hero {
-    position: relative;
-    color: #fff;
-    padding-top: 20vh;
-    padding-bottom: 100px;
-    margin: 0;
-    background: $green;
-    // background: url(../images/logo-t-semi-opaque.svg) no-repeat top -20px right -20px / auto 110%, 
-    //   linear-gradient(to right, $green, lighten($green, 20));
-    background: url(../images/logo-t-semi-opaque.svg) no-repeat top -20px right -20px / auto 110%, 
-      linear-gradient(to right, $green, #80cbc4);
-
-    // #80cbc4
-
-    @media (max-width: 550px) {
-      padding-top: 90px;
-      padding-bottom: 80px;
-      // background: url(../images/logo-t-semi-opaque.svg) no-repeat top -20px right -200px / auto 110%, 
-      // linear-gradient(to right, $green, lighten($green, 20));
-      background: url(../images/logo-t-semi-opaque.svg) no-repeat top -20px right -20px / auto 110%, 
-        linear-gradient(to right, $green, #80cbc4);
-
-      .cta {
-        text-align: center;
-      }
-    }
-
-    &::after {
-      content: '';
-      background: url(../images/brush-stripe-white.svg) no-repeat top left/100%;
-      height: 80px;
-      width: 100%;
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-    }
-    
-    .logo {
-      img {
-        height: 2em;
-        margin-bottom: 4em;
-      }
-    }
-    
-    .hero-heading {
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 6rem;
-      line-height: 6rem;
-      margin-bottom: 0;
-    }
-
-    .lead {
-        font-size: 1.5em;
-        line-height: 1.2;
-        font-weight: 100;
-    }
-  }
-  
-  &.footer {
-    background-color: #444;
-    color: #9E9E9E;
-    min-height: 150px;
-    padding-top:60px;
-
-    p {
-        font-weight: 200 !important;
-        font-size: .9em !important;
-    }
-    address {
-        font-size: .9em;
-        font-weight: 200;
-    }
-    .oci-logo {
-        height: 1.2em;
-        vertical-align: middle;
-    }
-    .footer-logo {
-        height: 2em;
-        opacity: .7;
-    }
-    
-    &::before {
-      content: '';
-      background: url(../images/brush-stripe-white.svg) no-repeat top left/100%;
-      height: 80px;
-      width: 100%;
-      position: absolute;
-      top: -8px;
-      left: 0;
-      transform: scaleY(-1);
     }
   }
 }

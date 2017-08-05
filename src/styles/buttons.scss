@@ -6,15 +6,6 @@
     height: auto;
     border-width: 2px;
 
-    &.small {
-        font-size: .8em;
-        padding: 10px;
-        line-height: .9em;
-        margin: 0;
-        font-weight: 400;
-        border-radius: 2px;
-    }
-
     &.button-primary {
         font-size: 1em;
         font-weight: 400;
@@ -53,5 +44,14 @@
             border-color: lighten($purple, 20);
             color: #fff;
         }
+    }
+
+    &.small {
+        font-size: .8em;
+        padding: 10px;
+        line-height: .9em;
+        margin: 0;
+        font-weight: 400;
+        border-radius: 2px;
     }
 }

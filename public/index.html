@@ -16,48 +16,42 @@
   <link rel="stylesheet" href="%PUBLIC_URL%/styles/app.css">
 </head>
 <body>
-  <!-- background image -->
-  <!-- img class="bg" src="images/background.svg" / -->
-  <header id="header" role="banner" data-module="GlobalHeader">
-  <a href="/" class="header__logo">
-    <span aria-label="tandemly">Tandemly</span>
-    <img src="%PUBLIC_URL%/images/Tandemly_LogoFull_White.svg" />
-  </a>
-  <div class="global-nav-container" tabindex="-1" data-js="nav-container" id="nav">
-    <nav role="navigation" class="global-nav nav" data-js="nav-list">
-      <ul class="nav__list">
-        <li role="presentation">
-          <a class="nav-link" href="">The Team</a>
-        </li>
-        <li role="presentation">
-          <a class="nav-link current" href="services.html">Services</a>
-        </li>
-        <li role="presentation">
-          <a class="nav-link" href="">Workshops</a>
-        </li>
-        <li role="presentation">
-          <a class="nav-link" href="">Playbook</a>
-        </li>
-        <li role="presentation">
-          <a class="nav-link" href="">About</a>
-        </li>
-        <li class="cta" role="presentation">
-          <a href="https://calendly.com/tandemly-core-team/coffee-chat-intro/" target="_blank" class="button button-primary-outline small">Connect with Us</a>
-        </li>
-      </ul>
-    </nav>
-    <a href="#nav" class="header__nav-button" data-js="nav-toggle" role="button" aria-label="Open Navigation Menu">Navigation</a>
-  </div>
+  <!-- Global page header and navigation -->
+  <header id="header" role="banner" data-module="GlobalHeader"> 
+    <a href="/" class="header__logo">
+      <span aria-label="tandemly">Tandemly</span>
+      <img src="/images/Tandemly_LogoFull_White.svg" />
+    </a>
+    <div class="global-nav-container" tabindex="-1" data-js="nav-container" id="nav">
+      <nav role="navigation" class="global-nav nav" data-js="nav-list">
+        <ul class="nav__list">
+          <li role="presentation">
+            <a class="nav-link" href="/careers.html">Careers</a>
+          </li>
+          <li role="presentation">
+            <a class="nav-link current" href="/services.html">Services</a>
+          </li>
+          <li role="presentation">
+            <a class="nav-link" href="/playbook.html">Playbook</a>
+          </li>
+          <li role="presentation">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="cta" role="presentation">
+            <a href="https://calendly.com/tandemly-core-team/coffee-chat-intro/" target="_blank" class="button button-primary small">Connect with Us</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#nav" class="header__nav-button" data-js="nav-toggle" role="button" aria-label="Open Navigation Menu">Navigation</a>
+    </div>
   </header>
   
   <!-- section: hero + call to action -->
-  <div class="section hero">
+  <section class="hero">
     <div class="container_full">
       <div class="row">
         <div class="eight columns">
-          <h4 class="hero-heading">
-            Making the web better
-          </h4>
+          <h4 class="hero-heading">Making the web better</h4>
         </div>
       </div>
       <div class="row">
@@ -69,9 +63,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="section info">
+  <section class="info">
     <div class="container">
       <div class="row">
         <div class="twelve columns">
@@ -81,8 +75,8 @@
           </p>
           <div class="row">
             <div class="four columns ">
-              <div style="text-align: center">
-              <img src="https://dummyimage.com/600/dce3dc/343538?text=placeholder" style="width: 50%" />
+              <div class="centered"> 
+                <img src="https://dummyimage.com/600/dce3dc/343538?text=placeholder" style="width: 50%" />
               </div>
               <h5>Industrial management tactics don't work.</h5>
               <p>Savvy companies and organizations need to change their product development processes to handle rapid, continuous change in order to adapt quickly in the face of uncertainty surrounding users and markets.</p>
@@ -110,21 +104,21 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="section whatwedo centered">
+  <section class="callout bg-gray">
     <div class="container">
       <div class="row">
         <div class="twelve columns">
-          <p>
+          <p class="centered">
             We partner with organizations looking to improve not only their web products but also the culture that builds them.
           </p>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="section">
+  <section> 
     <div class="container">
       <div class="row">
         <div class="tweleve columns">
@@ -153,14 +147,14 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="section aboutpeople centered">
+  <section class="callout bg-green">
     <div class="container">
       <div class="row">
         <div class="twelve columns">
-          <p>
-            <strong>Software is about design, not just technology.</strong><br/>
+          <p class="centered">
+            <span class="text-celadon_green" style="font-weight: 400">Software is about design, not just technology.</span><br/>
             And, ultimately, it’s about connecting people.<br/>
             Connecting people with their goals and needs.<br/>
             Connecting them to other people.
@@ -168,9 +162,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="section">
+  <section>
     <div class="container">
       <div class="row">
         <div class="six columns">
@@ -190,14 +184,14 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="section">
+  <section>
     <div class="container">
       <div class="row">
         <div class="twelve columns">
           <h3>Principles over Process</h3>
-            <div class="row">
+            <div class="row display-flex">
               <div class="six columns">
                 <h5>Customer value = Business value</h5>
                 <div style="display: flex">
@@ -206,6 +200,8 @@
                     Build a product centered around the users; make them successful, respect their time, and solve their problems.
                   </p>
                 </div>
+              </div>
+              <div class="six columns">
                 <h5>Maximize learning over delivery</h5>
                 <div style="display: flex">
                   <div style="width: 33%; padding: 0 5%"><img src="https://dummyimage.com/600/dce3dc/343538?text=placeholder" width="100%" /></div>
@@ -214,6 +210,8 @@
                   </p>
                 </div>
               </div>
+            </div><!-- row -->
+            <div class="row display-flex">
               <div class="six columns">
                 <h5>Radical Transparency</h5>
                 <div style="display: flex">
@@ -222,6 +220,8 @@
                     Transparency reduces fears and creates trust.  Constantly expose the work you are doing; and expose your teams to customers and data.
                   </p>
                 </div>
+              </div>
+              <div class="six columns">
                 <h5>Humility in all things</h5>
                 <div style="display: flex">
                   <div style="width: 33%; padding: 0 5%"><img src="https://dummyimage.com/600/dce3dc/343538?text=placeholder" width="100%" /></div>
@@ -230,15 +230,15 @@
                   </p>
                 </div>
               </div>
-            </div>
+            </div><!-- row -->
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="section hireus">
+  <section class="brushed bg-blue text-white">
     <div class="container">
-      <div class="row">
+      <div class="row display-flex">
         <div class="six columns">
           <h3>Hire Us</h3>
           <p class="primary">
@@ -247,20 +247,21 @@
            the steps needed to get to that moment and find better ways to innovate.
           </p>
         </div>
-        <div class="six columns">
+        <div class="six columns hireus-form-container">
           <form name="hireus"> 
+            <h5>Let's find out how we can innovate together.</h5>
             <input type="text" name="name" />
             <label for="name">Who are you?</label>
             <input type="text" name="email" />
             <label for="name">Your email?</label><br/>
-            <button type="button" class="button button-primary">Connect with Us</button>
+            <button type="button" class="button button-primary u-pull-right">Connect with Us</button>
           </form>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="section workwithus">
+  <section> 
     <div class="container">
       <div class="row">
         <div class="six columns">
@@ -300,57 +301,53 @@
           <p style="text-align: right">
             <button type="button" class="button button-primary-outline">See Job Postings</button>
           </p>
-          <p> 
-            Please send your resume and a thoughtful email that includes specifics 
-            about how your you can help us make the web better and
-            how your previous experience matches one of our job descriptions to: <a href="mailto:hireme@tandem.ly">hireme@tandem.ly</a>.
-          </p>
         </div>
         <div class="six columns">
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="section footer">
+  <!-- Global page footer -->
+  <footer> 
     <div class="container_full">
       <div class="row">
         <div class="three columns">
           <p>
-            <img src="%PUBLIC_URL%/images/Tandemly_LogoFull_White.svg" class="footer-logo" /> 
-            <br/>
-            An <a href="http://objectcomputing.com"><img src="%PUBLIC_URL%/images/oci-logo-small.svg" class="oci-logo" /></a> &nbsp;Company<br/>
+            <img src="/images/Tandemly_LogoFull_White.svg" class="footer-logo" /> <br/>
+            An <a href="http://objectcomputing.com"><img src="/images/oci-logo-small.svg" class="oci-logo" /></a> &nbsp;Company<br/>
             <small>&copy; 2017 Tandem.ly &amp; OCI</small>
           </p>
         </div>
         <div class="three columns">
-          <h6>Come see us...</h6>
+          <h6 class="heading">Come see us...</h6>
           <address>
             12140 Woodcrest Exec. Dr.<br/>
             Suite 250<br/>
             Saint Louis, Missouri 63141, US<br/>
           </address>
           <p></p>
-          <h6>Events</h6>
+          <h6 class="heading">Events</h6>
           <p>
-          <i class="fa fa-2x fa-meetup" style="vertical-align: middle"></i> 
-          <a href="https://www.meetup.com/STL-Web-Design-and-Development-Meetup/">Web Design & Development Meetup</a>
+            <i class="fa fa-2x fa-meetup" style="vertical-align: middle"></i> 
+            <a href="https://www.meetup.com/STL-Web-Design-and-Development-Meetup/">Web Design & Development Meetup</a>
           </p>
         </div>
         <div class="three columns">
-          <h6>Talk with Us...</h6>
+          <h6 class="heading">Talk with Us...</h6>
           <p>
-          <a href="https://www.facebook.com/tandemly"><i class="fa fa-2x fa-facebook-square"></i></a>
-          <a href="https://twitter.com/tandemly"><i class="fa fa-2x fa-twitter-square"></i></a>
-          <a href="https://www.linkedin.com/company-beta/23167238/"><i class="fa fa-2x fa-linkedin-square"></i></a>
-          <a href="https://github.com/Tandemly"><i class="fa fa-2x fa-github-square"></i></a>
+            <a href="https://www.facebook.com/tandemly"><i class="fa fa-2x fa-facebook-square"></i></a>
+            <a href="https://twitter.com/tandemly"><i class="fa fa-2x fa-twitter-square"></i></a>
+            <a href="https://www.linkedin.com/company-beta/23167238/"><i class="fa fa-2x fa-linkedin-square"></i></a>
+            <a href="https://github.com/Tandemly"><i class="fa fa-2x fa-github-square"></i></a>
+          </p>
           <p>
             p: <a href="tel:3145790066" aria-label="Call Tandem.ly at 314 579 0066">314.579.0066</a><br/>
             e: <a href="mailto:hello@tandem.ly?subject=Let%27s%20Chat%21" aria-label="Send an email to hello at tandemly">hello @ tandem.ly</a>
           </p>
         </div>
         <div class="three columns">
-          <h6>Work with Us!</h6>
+          <h6 class="heading">Work with Us!</h6>
           <p>
             We strive to have diverse, talented teams of
             creative individuals.  If you want to help us
@@ -360,7 +357,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </footer>
 
   <!-- load 'em up, move 'em out -->
   <script src="https://use.fontawesome.com/66c77f367e.js"></script>

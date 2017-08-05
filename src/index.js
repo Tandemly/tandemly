@@ -19,7 +19,7 @@ if (typeof console === 'object') {
 var toggle = document.querySelector('.header__nav-button');
 var nav = document.querySelector('nav.global-nav');
 const header = document.querySelector('#header');
-const hero = document.querySelector('.hero .container_full');
+const hero = document.querySelector('.hero .container_full') || document.querySelector('.section.first .container_full');
 
 toggle.addEventListener('click', () => {
   toggle.classList.toggle('open');
@@ -32,7 +32,7 @@ toggle.addEventListener('click', () => {
 // const logo = document.querySelector('.logo');
 
 // const pos = hero.getBoundingClientRect().bottom;
-const pos = hero.offsetHeight;
+const pos = (hero && hero.offsetHeight) || 150;
 const scroll = window.requestAnimationFrame;
 console.log(`pos = ${pos}`)
 
