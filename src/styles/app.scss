@@ -145,87 +145,87 @@ section.page-top h3 {
   }
 }
 
-.section {
-  position: relative;
-  background-color: #fff;
-  padding: 30px 0px 0px 0px;
-  // overflow: hidden;
+// .section {
+//   position: relative;
+//   background-color: #fff;
+//   padding: 30px 0px 0px 0px;
+//   // overflow: hidden;
 
-  &.first { 
-    padding-top: 90px;
-  }
+//   &.first { 
+//     padding-top: 90px;
+//   }
 
-  &.services {
-    @include brushed(#a0bbbc);
-    p { 
-      font-size: 2em; 
-      font-weight: 200;
-      color: #deecec;
-      margin: 2em 0;
-    }
-  }
+//   &.services {
+//     @include brushed(#a0bbbc);
+//     p { 
+//       font-size: 2em; 
+//       font-weight: 200;
+//       color: #deecec;
+//       margin: 2em 0;
+//     }
+//   }
 
-  &.whatwedo {
-    @include brushed(#a0bbbc);
-    h2 { 
-      color: #fff; 
-      text-transform: uppercase;
-      font-weight: 600;
-    }
-    p { 
-      font-size: 2em; 
-      font-weight: 200;
-      color: #deecec;
-      margin: 2em 0;
-    }
-  }
+//   &.whatwedo {
+//     @include brushed(#a0bbbc);
+//     h2 { 
+//       color: #fff; 
+//       text-transform: uppercase;
+//       font-weight: 600;
+//     }
+//     p { 
+//       font-size: 2em; 
+//       font-weight: 200;
+//       color: #deecec;
+//       margin: 2em 0;
+//     }
+//   }
 
-  &.aboutpeople {
-    @include brushed(#95b25b);
-    h2 { 
-      color: #fff; 
-      text-transform: uppercase;
-      font-weight: 600;
-    }
-    p { 
-      font-size: 2em; 
-      font-weight: 200;
-      color: #b9e562;
-      margin: 2em 0;
+//   &.aboutpeople {
+//     @include brushed(#95b25b);
+//     h2 { 
+//       color: #fff; 
+//       text-transform: uppercase;
+//       font-weight: 600;
+//     }
+//     p { 
+//       font-size: 2em; 
+//       font-weight: 200;
+//       color: #b9e562;
+//       margin: 2em 0;
 
-      strong { color: #fff }
-    }
-  }
+//       strong { color: #fff }
+//     }
+//   }
 
-  &.hireus {
-    @include brushed(#839fa0);
-    padding: 80px 0;
+//   &.hireus {
+//     @include brushed(#839fa0);
+//     padding: 80px 0;
 
-    .row {
-      margin: 2em 0;
-    }
+//     .row {
+//       margin: 2em 0;
+//     }
 
-    h3 { color: #fff }
-    p { color: rgba(255,255,255, 0.78); }
-    form[name=hireus] {
-      width: 80%;
-      margin-top: 1em;
+//     h3 { color: #fff }
+//     p { color: rgba(255,255,255, 0.78); }
+//     form[name=hireus] {
+//       width: 80%;
+//       margin-top: 1em;
 
-      input[type=text] { 
-        display: block;
-        width: 100%;
-        border-color: #fff;
-      }
-      label { 
-        font-weight: 200;
-        color: #dad8d8; 
-      }
-      button {
-        float: right;
-      }
-    }
-  }
-}
+//       input[type=text] { 
+//         display: block;
+//         width: 100%;
+//         border-color: #fff;
+//       }
+//       label { 
+//         font-weight: 200;
+//         color: #dad8d8; 
+//       }
+//       button {
+//         float: right;
+//       }
+//     }
+//   }
+// }
 
 
 // Default section alignment (mobile first)
