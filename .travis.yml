@@ -10,6 +10,9 @@ node_js:
   - "6"
   - "stable"
 
+notifications:
+    slack: tandemly:wrepoJiPgoJWyMwWOsYLPfJX
+
 cache:
   directories:
   - node_modules
