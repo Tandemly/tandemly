@@ -64,14 +64,14 @@ section.hero {
       bottom: -5px;
       left: 0;
     }
-    
+
     .logo {
       img {
         height: 2em;
         margin-bottom: 4em;
       }
     }
-    
+
     .hero-heading {
       text-transform: uppercase;
       font-weight: bold;
@@ -108,6 +108,7 @@ section.page-top h3 {
     h5 {
       color: #d2dfdf;
       font-weight: 400;
+      border: none;
     }
 
     input[type=text] {
@@ -145,20 +146,64 @@ section.page-top h3 {
   }
 }
 
+.def-list {
+    .row {
+        padding: 5px;
+        border-radius: 4px;
+        margin-bottom: 4px;
+
+        .term {
+            font-size: 1.3em;
+            font-weight: 400;
+            color: #277f83;
+        }
+        .def {
+            margin: 0;
+        }
+    }
+    .row:nth-child(odd) {
+        background-color:#f5f5f5;
+    }
+    .row:nth-child(even) {
+        background-color:#ffffff;
+
+    }
+}
+
+.tag-heading {
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+ul.tag-list {
+    list-style: none;
+    display: inline;
+    margin: 0;
+
+    li {
+        display: inline-block;
+        padding: 4px 6px;
+        background-color: #277f83;
+        color: #fff;
+        border-radius: 2px;
+        font-size: .8em;
+    }
+}
+
 // .section {
 //   position: relative;
 //   background-color: #fff;
 //   padding: 30px 0px 0px 0px;
 //   // overflow: hidden;
 
-//   &.first { 
+//   &.first {
 //     padding-top: 90px;
 //   }
 
 //   &.services {
 //     @include brushed(#a0bbbc);
-//     p { 
-//       font-size: 2em; 
+//     p {
+//       font-size: 2em;
 //       font-weight: 200;
 //       color: #deecec;
 //       margin: 2em 0;
@@ -167,13 +212,13 @@ section.page-top h3 {
 
 //   &.whatwedo {
 //     @include brushed(#a0bbbc);
-//     h2 { 
-//       color: #fff; 
+//     h2 {
+//       color: #fff;
 //       text-transform: uppercase;
 //       font-weight: 600;
 //     }
-//     p { 
-//       font-size: 2em; 
+//     p {
+//       font-size: 2em;
 //       font-weight: 200;
 //       color: #deecec;
 //       margin: 2em 0;
@@ -182,13 +227,13 @@ section.page-top h3 {
 
 //   &.aboutpeople {
 //     @include brushed(#95b25b);
-//     h2 { 
-//       color: #fff; 
+//     h2 {
+//       color: #fff;
 //       text-transform: uppercase;
 //       font-weight: 600;
 //     }
-//     p { 
-//       font-size: 2em; 
+//     p {
+//       font-size: 2em;
 //       font-weight: 200;
 //       color: #b9e562;
 //       margin: 2em 0;
@@ -211,14 +256,14 @@ section.page-top h3 {
 //       width: 80%;
 //       margin-top: 1em;
 
-//       input[type=text] { 
+//       input[type=text] {
 //         display: block;
 //         width: 100%;
 //         border-color: #fff;
 //       }
-//       label { 
+//       label {
 //         font-weight: 200;
-//         color: #dad8d8; 
+//         color: #dad8d8;
 //       }
 //       button {
 //         float: right;
