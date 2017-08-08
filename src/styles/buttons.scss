@@ -16,15 +16,15 @@
         color: #fff;
 
         &:hover {
-        transition: all 0.3s ease;
-        background-color: lighten($purple, 20);
-        border-color: lighten($purple, 20);
-        color: #fff;
+            transition: all 0.3s ease;
+            background-color: darken($purple, 10);
+            border-color: darken($purple, 10);
+            color: #fff;
         }
         &:focus {
-        background-color: darken($purple, 20);
-        border-color: darken($purple, 20);
-        color: #fff;
+            background-color: darken($purple, 10);
+            border-color: darken($purple, 10);
+            color: #fff;
         }
     }
 
@@ -40,8 +40,8 @@
             color: #fff;
         }
         &:focus {
-            background-color: lighten($purple, 20);
-            border-color: lighten($purple, 20);
+            background-color: $purple;
+            border-color: $purple;
             color: #fff;
         }
     }
@@ -56,15 +56,15 @@
         color: #fff;
 
         &:hover {
-        transition: all 0.3s ease;
-        background-color: lighten($color_paradiso_approx, 20);
-        border-color: lighten($color_paradiso_approx, 20);
-        color: #fff;
+            transition: all 0.3s ease;
+            background-color: darken($color_paradiso_approx, 10);
+            border-color: darken($color_paradiso_approx, 10);
+            color: #fff;
         }
         &:focus {
-        background-color: darken($color_paradiso_approx, 20);
-        border-color: darken($color_paradiso_approx, 20);
-        color: #fff;
+            background-color: darken($color_paradiso_approx, 10);
+            border-color: darken($color_paradiso_approx, 10);
+            color: #fff;
         }
     }
 
