@@ -14,7 +14,8 @@
   "author": "David Atchley, david.atchley@tandem.ly",
   "license": "ISC",
   "devDependencies": {
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "query-string": "^5.0.0"
   },
   "dependencies": {
     "autoprefixer": "7.1.1",
