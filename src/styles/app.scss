@@ -10,6 +10,9 @@
 .container {
     // narrow width for content containers
     max-width: 906px;
+    @media (min-width: 1200px) {
+        max-width: 1360px;
+    }
 }
 
 .container_full {
@@ -252,9 +255,13 @@ ul.tag-list {
 }
 
 .card {
-    padding: 5px 10px;
+    position: relative;
+    padding: 15px;
     margin-bottom: 10px;
 
+    &.with-button {
+        padding-bottom: 85px;
+    }
     h5 {
         color: #F5F5F5;
         text-transform: none;
@@ -264,6 +271,7 @@ ul.tag-list {
     p {
         padding: 0 5px;
         opacity: .7;
+        margin-bottom: 0;
 
         &:before {
             content: " ";
@@ -313,6 +321,16 @@ ul.tag-list {
         color: #fff;
 
         h5 { color: #fff; }
+    }
+
+    // full length button on bottom of card
+    .button.bottom {
+        position: absolute;
+        display: block;
+        width: calc(100% - 30px);
+        bottom: 0px;
+        left: 0px;
+        margin: 15px;
     }
 }
 

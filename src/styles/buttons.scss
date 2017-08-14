@@ -87,6 +87,22 @@
         }
     }
 
+    &.button-white-outline {
+        background-color: transparent;
+        border-color: $white;
+        color: $white;
+
+        &:hover {
+            transition: all 0.3s ease;
+            border-color: darken($white, 20);
+            color: darken(#fff, 20);
+        }
+        &:focus {
+            border-color: lighten($white, 20);
+            color: #fff;
+        }
+    }
+
     &.small {
         font-size: .8em;
         padding: 10px;
