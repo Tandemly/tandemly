@@ -87,6 +87,25 @@
         }
     }
 
+    &.button-white {
+        font-size: 1em;
+        font-weight: 400;
+        transition: all 0.3s ease;
+        background-color: $white;
+        border-color: $white;
+        border-radius: 2px;
+
+        &:hover {
+            transition: all 0.3s ease;
+            background-color: darken($white, 10);
+            border-color: darken($white, 10);
+        }
+        &:focus {
+            background-color: darken($white, 10);
+            border-color: darken($white, 10);
+        }
+    }
+
     &.button-white-outline {
         background-color: transparent;
         border-color: $white;
