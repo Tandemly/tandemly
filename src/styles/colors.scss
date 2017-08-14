@@ -17,12 +17,12 @@ $teal: rgba(112, 198, 172, 1);
 $green: rgba(155, 202, 59, 1);
 $purple: rgba(163,62,119,1);
 
-.text-white { color: #fff; }
-.text-orange { color: $orange; }
-.text-green { color: $green; }
-.text-teal { color: $teal; }
-.text-blue { color: $blue; }
-.text-purple { color: $purple; }
+.text-white { color: #fff !important; }
+.text-orange { color: $orange !important; }
+.text-green { color: $green !important; }
+.text-teal { color: $teal !important; }
+.text-blue { color: $blue !important; }
+.text-purple { color: $purple !important; }
 .bg-orange { background-color: $orange; }
 .bg-green { background-color: $green; }
 .bg-teal { background-color: $teal; }
@@ -35,7 +35,7 @@ $gray: #dddddd;
 $lightgray: #eeeeee;
 $black: #666770;
 
-.text-white { color: $white; }
+.text-white { color: $white !important; }
 
 // teal+blue monochrome palette
 // https://coolors.co/277f83-b8f6f9-a0bbbc-2a3e3f-839fa0
@@ -45,11 +45,11 @@ $color_cambridge_blue: rgba(160, 187, 188, 1);
 $color_gunmetal: rgba(42, 62, 63, 1);
 $color_weldon_blue: rgba(131, 159, 160, 1);
 
-.text-celadon_green { color: $color_celadon_green; }
-.text-diamond { color: $color_diamond; }
-.text-cambridge_blue { color: $color_cambridge_blue; }
-.text-gunmetal { color: $color_gunmetal; }
-.text-weldon_blue { color: $color_weldon_blue; }
+.text-celadon_green { color: $color_celadon_green !important; }
+.text-diamond { color: $color_diamond !important; }
+.text-cambridge_blue { color: $color_cambridge_blue !important; }
+.text-gunmetal { color: $color_gunmetal !important; }
+.text-weldon_blue { color: $color_weldon_blue !important; }
 
 // green monochrome w/ accent palette
 // https://coolors.co/778952-95b25b-b9e562-9bca3b-ae3378
@@ -59,11 +59,11 @@ $color_inchworm: rgba(185, 229, 98, 1);
 $color_yellow_green: rgba(155, 202, 59, 1);
 $color_maximum_red_purple: rgba(174, 51, 120, 1);
 
-.text-camouflage_green { color: $color_camouflage_green; }
-.text-turtle_green { color: $color_turtle_green; }
-.text-inchworm { color: $color_inchworm; }
-.text-yellow_green { color: $color_yellow_green; }
-.text-maximum_red_purple { color: $color_maximum_red_purple; }
+.text-camouflage_green { color: $color_camouflage_green !important; }
+.text-turtle_green { color: $color_turtle_green !important; }
+.text-inchworm { color: $color_inchworm !important; }
+.text-yellow_green { color: $color_yellow_green !important; }
+.text-maximum_red_purple { color: $color_maximum_red_purple !important; }
 
 $color_tundora_approx: #444444;
 $color_atlantis_approx: #9bca3b;
