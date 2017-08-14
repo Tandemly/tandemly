@@ -44,6 +44,8 @@ a, a:visited, a:link {
     color: $green;
 }
 
+sup { color: red }
+
 // Ability to display equal-height columns
 // retaining responsiveness - Flex! FTW
 .row.display-flex {
@@ -69,10 +71,11 @@ section {
     margin: 0 auto;
 
     h5 {
-        color: #277f83;
+        color: $orange;
         // border-bottom: 1px solid #a0bbbc;
-        text-transform: uppercase;
-        font-size: 2rem;
+        // text-transform: uppercase;
+        font-size: 1.4em;
+        font-family: 'Raleway', sans-serif;
     }
 
     // @media (max-width: 550px) {
@@ -81,13 +84,17 @@ section {
 
     &.callout {
         color: #fff;
+        margin-top: 25px;
         p {
-            font-size: 1.4em;
+            font-size: 2em;
             margin: 0px 0px 2.5rem;
             opacity: .8;
             // @media (max-width: 550px) {
             //     font-size: 1.4em;
             // }
+        }
+        h3 + p {
+            font-size: 1.2em;
         }
     }
     &.callout,
@@ -183,6 +190,7 @@ footer {
     color: #9E9E9E;
     min-height: 150px;
     padding-top: 90px;
+    margin-top: 25px;
 
     &::before {
         @include brushed-top();

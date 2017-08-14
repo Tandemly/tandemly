@@ -1,13 +1,13 @@
 @mixin text-gradient ($from, $to) {
   color: $from;
-  background: linear-gradient(to right, $from, $to 50%); 
+  background: linear-gradient(to right, $from, $to 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;  
+  text-fill-color: transparent;
 }
 @mixin bg-gradient ($from, $to, $opacity: 0) {
   background-color: #fff;
-  background: linear-gradient(to right, transparentize($from, 1 - $opacity), transparentize($to, 1 - $opacity) 80%); 
+  background: linear-gradient(to right, transparentize($from, 1 - $opacity), transparentize($to, 1 - $opacity) 80%);
 }
 
 //colors
@@ -16,6 +16,18 @@ $blue: rgba(70, 84, 162, 1);
 $teal: rgba(112, 198, 172, 1);
 $green: rgba(155, 202, 59, 1);
 $purple: rgba(163,62,119,1);
+
+.text-white { color: #fff; }
+.text-orange { color: $orange; }
+.text-green { color: $green; }
+.text-teal { color: $teal; }
+.text-blue { color: $blue; }
+.text-purple { color: $purple; }
+.bg-orange { background-color: $orange; }
+.bg-green { background-color: $green; }
+.bg-teal { background-color: $teal; }
+.bg-blue { background-color: $blue; }
+.bg-purple { background-color: $purple; }
 
 $white: #ffffff;
 $darkgray: #999999;

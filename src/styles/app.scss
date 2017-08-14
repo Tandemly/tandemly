@@ -5,6 +5,7 @@
 @import 'util.scss';
 
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,600,700');
 
 .container {
     // narrow width for content containers
@@ -230,7 +231,7 @@ ul.tag-list {
   }
 }
 .team-overlay {
-    display: inline-block;
+    // display: inline-block;
     z-index: 18;
     font-size: .9em;
     padding: 4px 8px;
@@ -248,4 +249,137 @@ ul.tag-list {
       font-weight: 200;
       color: #f4825b;
     }
+}
+
+.card {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+
+    h5 {
+        color: #F5F5F5;
+        text-transform: none;
+        font-weight: 500;
+        font-size: 1.6em;
+    }
+    p {
+        padding: 0 5px;
+        opacity: .7;
+
+        &:before {
+            content: " ";
+            background-color: rgba(255, 255, 255, 0.43);
+            display: block;
+            height: 2px;
+            width: 10%;
+            margin-bottom: 5px;
+        }
+    }
+
+    &.blue {
+        background-color:#277f83;
+        color: #fff;
+    }
+    &.teal {
+        background: #70c6ac;
+        color: #2a3e3f;
+    }
+    &.green {
+        background-color: #95b25b;
+        color: #fff;
+    }
+    &.light-green {
+        background-color: #9bca3b;
+        color: hsla(183, 54%, 26%, 1);
+    }
+    &.orange {
+        background-color: $orange;
+        color: #fff;
+    }
+    &.gray {
+        background-color: #839fa0;
+        color: #fff;
+    }
+    &.light {
+        background-color: #f5f5f5;
+        color: #2a3e3f;
+
+        h5 { color: #277f83; }
+        p:before {
+            background-color: rgba(39, 127, 131, .43);
+        }
+    }
+    &.dark {
+        background-color: #839fa0;
+        color: #fff;
+
+        h5 { color: #fff; }
+    }
+}
+
+.coupon {
+    background: rgba(0, 0, 0, 0.13);
+    padding: 8px;
+    border-radius: 8px;
+    font-size: .8em;
+    margin-bottom: 10px;
+
+    p { margin-bottom: 0; }
+
+    .burrito {
+        float: left;
+        height: 60px;
+        transform: rotate(45deg);
+        padding: 0 10px;
+    }
+}
+
+.step-number {
+    font-weight: 700;
+    color: #95b25b;
+}
+
+.block-heading {
+    text-transform: none;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.block {
+    padding: 10px;
+}
+
+.bg-pattern {
+    margin:0;
+    padding: 0;
+    position: relative;
+
+    &:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: url(../images/texture_dots-circle-grey.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 40em;
+        opacity: .6;
+    }
+
+    &.left-side {
+        &:before {
+            background-position: -20em 0px;
+        }
+    }
+
+    &.right-side {
+        &:before {
+            background-position: 140% 0px;
+        }
+    }
+
 }
