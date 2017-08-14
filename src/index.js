@@ -21,6 +21,16 @@ var toggle = document.querySelector('.header__nav-button');
 var nav = document.querySelector('nav.global-nav');
 const header = document.querySelector('#header');
 const hero = document.querySelector('.hero .container_full') || document.querySelector('.section.first .container_full');
+const hero_button = hero && hero.querySelector('.cta .button');
+const input = document.querySelector('.hireus-form-container input[name="name"]');
+
+if (hero_button) {
+    hero_button.addEventListener('click', (ev) => {
+        console.log(input);
+        input && input.focus();
+        ev.preventDefault();
+    })
+}
 
 toggle.addEventListener('click', () => {
   toggle.classList.toggle('open');
