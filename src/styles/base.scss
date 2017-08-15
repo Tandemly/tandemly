@@ -46,15 +46,27 @@ a, a:visited, a:link {
 
 sup { color: red }
 
+.u-img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 // Ability to display equal-height columns
 // retaining responsiveness - Flex! FTW
+// gutter = 10px
 .row.display-flex {
   display: flex;
   flex-wrap: wrap;
+//   justify-content: space-around;
+  padding: 5px;
 }
 .row.display-flex > [class*='column'] {
   display: flex;
+  flex: 1 1 auto;
   flex-direction: column;
+  float: none;
+  margin: 5px;
 }
 
 @media only screen and (min-width : 320px) and (max-width : 560px) {

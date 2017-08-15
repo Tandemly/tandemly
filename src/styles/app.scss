@@ -258,10 +258,12 @@ ul.tag-list {
     position: relative;
     padding: 15px;
     margin-bottom: 10px;
+    min-width: 260px;
 
     &.role {
         padding-bottom: 85px;
         margin-bottom: 2em;
+        min-width: 290px;
 
         p {
             margin-top: .5em;
