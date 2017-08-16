@@ -1,5 +1,6 @@
 @import 'colors.scss';
 @import 'base.scss';
+@import 'flex-grid.scss';
 @import 'buttons.scss';
 @import 'global-nav.scss';
 @import 'util.scss';
@@ -463,12 +464,28 @@ ul.tag-list {
     overflow: hidden;
 }
 
+.page-top .row .columns.twelve {
+    position: relative;
+}
+
+.page-ref {
+    position: absolute;
+    top: 0.7em;
+    left: 0px;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    font-size: .8em;
+    letter-spacing: .2em;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+
 .left-offset-to-bg {
     position: absolute;
     right: -5%;
     top: 0px;
-    // height: 50%;
-    opacity: .1;
+    opacity: 0;     // hide through opacity
 
     @media (min-width: 400px) {
         opacity: 0.1;
@@ -479,8 +496,14 @@ ul.tag-list {
     @media (min-width: 550px) {
         opacity: 0.1;
         height: 60vh;
-        right: -80%;
+        right: 60%;
         top: -5em;
+    }
+    @media (min-width: 550px) and (orientation: landscape) {
+            opacity: .8;
+            right: 0px;
+            top: 0px;
+            height: 80vh;
     }
     @media (min-width: 750px) {
         opacity: 0.8;
@@ -490,10 +513,20 @@ ul.tag-list {
     }
     @media (min-width: 1000px) {
         opacity: 0.8;
-        top: -2em;
+        top: -1em;
         height: 35vh;
+    }
+    @media (min-width: 1000px) and (orientation: landscape) {
+        height: 30vw;
     }
     @media (min-width: 1200px) {
         opacity: 0.8;
+        right: 20%;
+        top: -1em;
+    }
+    @media (min-width: 1200px) and (orientation: landscape) {
+        top: -2em;
+        right: 0%;
+        height: 20vw;
     }
 }
