@@ -458,3 +458,42 @@ ul.tag-list {
 //     right: 15px;
 //     width: 90px;
 // }
+
+.bg-pattern {
+    overflow: hidden;
+}
+
+.left-offset-to-bg {
+    position: absolute;
+    right: -5%;
+    top: 0px;
+    // height: 50%;
+    opacity: .1;
+
+    @media (min-width: 400px) {
+        opacity: 0.1;
+        height: 60vh;
+        right: 50%;
+        top: -5em;
+    }
+    @media (min-width: 550px) {
+        opacity: 0.1;
+        height: 60vh;
+        right: -80%;
+        top: -5em;
+    }
+    @media (min-width: 750px) {
+        opacity: 0.8;
+        height: 40vh;
+        top: 0px;
+        right: 0px;
+    }
+    @media (min-width: 1000px) {
+        opacity: 0.8;
+        top: -2em;
+        height: 35vh;
+    }
+    @media (min-width: 1200px) {
+        opacity: 0.8;
+    }
+}
