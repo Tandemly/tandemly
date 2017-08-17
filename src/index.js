@@ -1,3 +1,4 @@
+/* global ga */
 /**
  * index.js
  */
@@ -26,11 +27,12 @@ const input = document.querySelector('.hireus-form-container input[name="name"]'
 
 if (hero_button) {
     hero_button.addEventListener('click', (ev) => {
-        console.log(input);
         input && input.focus();
         ev.preventDefault();
     })
 }
+
+
 
 toggle.addEventListener('click', () => {
   toggle.classList.toggle('open');
@@ -40,19 +42,34 @@ toggle.addEventListener('click', () => {
 
 const form = document.querySelector('form[name="hireus"]');
 const connect_endpoint = "https://calendly.com/tandemly-core-team/discovery-chat";
+const nav_cta = document.querySelector('header nav li.cta a');
 
 const connect = (name, email) => {
     const params = qs.stringify({ name, email });
     const url = [connect_endpoint, '?', params].join('');
-    console.log(`going to url: ${url}`);
-    window.location.href = url;
+    galink(url, 'CTA Form Click', 'cta-form-click');
+}
+
+const galink = (url, eventName, label) => {
+    ga('send', 'event', eventName, 'click', {
+        hitCallback: () => {
+            window.location.href = url;
+        }
+    });
+}
+
+if (nav_cta) {
+    nav_cta.addEventListener('click', (ev) => {
+        ev.preventDefault();
+        galink(ev.target.href, 'CTA Nav Click', 'cta-nav-click')
+    });
 }
 
 if (form) {
     form.addEventListener('submit', (ev) => {
         ev.preventDefault();
-        const name = form.querySelector('input[name="name"]');
-        const email = form.querySelector('input[name="email"]');
+        const name = form.querySelector('input[name="name"]').value;
+        const email = form.querySelector('input[name="email"]').value;
         connect(name, email);
     });
 }
@@ -60,7 +77,6 @@ if (form) {
 // const pos = hero.getBoundingClientRect().bottom;
 const pos = (hero && hero.offsetHeight) || 150;
 const scroll = window.requestAnimationFrame;
-console.log(`pos = ${pos}`)
 
 const loop = () => {
     if (window.pageYOffset >= pos) { // && /slide-up/.test(fixed_cta.className)) {

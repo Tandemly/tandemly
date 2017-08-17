@@ -71,8 +71,8 @@
     <div class="bg-pattern">
     <section class="info">
         <div class="container">
-            <div class="row">
-                <div class="twelve columns">
+            <div class="row flex-grid">
+                <div class="col col-md-5 col-xs-12">
                     <h3>What we do.</h3>
                     <p class="primary">
                         We're a unique design and development agency that loves to help organizations create
@@ -84,32 +84,57 @@
                         you produce but the culture that informs and builds them.
                     </p>
                 </div>
-            </div>
-            <div class="row display-flex">
-                <div class="four columns card blue">
-                    <h5>Design</h5>
-                    <p>
-                        Work with our team to create and conceive of new
-                        products or services. Or innovate on an existing
-                        product with specific improvements and goals in mind.
-                    </p>
+                <div class="col col-md-7 col-xs-hidden flex-item-center">
+                    <img src="images/product-team.svg" class="u-img-responsive" />
                 </div>
-                <div class="four columns card teal">
-                    <h5>Development</h5>
-                    <p>
-                        Integrate with a Tandem.ly team to help lead both design
-                        and development of web applications for
-                        desktop and mobile. We'll help you deliver innovative
-                        sites and apps that users love.
-                    </p>
+                <div class="col col-md-4">
+                    <div class="card blue">
+                        <h5>Design</h5>
+                        <div class="card-icon-corner">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-pencil fa-stack-1x fa-inverse text-celadon_green"></i>
+                            </span>
+                        </div>
+                        <p>
+                            Work with our team to create and conceive of new
+                            products or services. Or innovate on an existing
+                            product with specific improvements and goals in mind.
+                        </p>
+                    </div>
                 </div>
-                <div class="four columns card green">
-                    <h5>Training</h5>
-                    <p>
-                        We love to learn and share what we learn. Engage us
-                        for consulting, training or custom workshops for your
-                        teams on design, development and product strategy.
-                    </p>
+                <div class="col col-md-4 ">
+                    <div class="card teal">
+                        <h5>Development</h5>
+                        <div class="card-icon-corner">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-code fa-stack-1x fa-inverse text-teal"></i>
+                            </span>
+                        </div>
+                        <p>
+                            Integrate with a Tandem.ly team to help lead both design
+                            and development of web applications for
+                            desktop and mobile. We'll help you deliver innovative
+                            sites and apps that users love.
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-4 ">
+                    <div class="card green">
+                        <h5>Training</h5>
+                        <div class="card-icon-corner">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-graduation-cap fa-stack-1x fa-inverse text-turtle_green"></i>
+                            </span>
+                        </div>
+                        <p>
+                            We love to learn and share what we learn. Engage us
+                            for consulting, training or custom workshops for your
+                            teams on design, development and product strategy.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -265,29 +290,44 @@
 
     <section>
         <div class="container">
-            <div class="row">
+            <div class="row display-flex">
                 <div class="six columns">
                     <h3>The Team</h3>
-                    <div class="team-grid">
-                        <div class="team-image">
-                            <img src="%PUBLIC_URL%/images/team/david-atchley.png" />
-                            <div class="team-overlay">
-                                <div class="name">David<br/>Atchley</div>
-                                <div class="title">Founder / CEO</div>
+                    <div class="flex-grid">
+                        <div class="col col-xs-6 col-sm-6 col-md-4">
+                            <div class="team-image">
+                                <img src="%PUBLIC_URL%/images/team/david-atchley.png" />
+                                <div class="team-overlay">
+                                    <div class="name">David<br/>Atchley</div>
+                                    <div class="title">Founder / CEO</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="team-image">
-                            <img src="%PUBLIC_URL%/images/team/stu-belshe.jpg" />
-                            <div class="team-overlay">
-                                <div class="name">Stu<br/>Belshe</div>
-                                <div class="title">Chief Design Officer</div>
+                        <div class="col col-xs-6 col-sm-6 col-md-4">
+                            <div class="team-image">
+                                <img src="%PUBLIC_URL%/images/team/stu-belshe.jpg" />
+                                <div class="team-overlay">
+                                    <div class="name">Stu<br/>Belshe</div>
+                                    <div class="title">Chief Design Officer</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="team-image">
-                            <img src="%PUBLIC_URL%/images/team/joseph-roberts.jpg" />
-                            <div class="team-overlay">
-                                <div class="name">Joseph<br/>Roberts</div>
-                                <div class="title">Sr. UI/UX Designer</div>
+                        <div class="col col-xs-6 col-sm-6 col-md-4">
+                            <div class="team-image">
+                                <img src="%PUBLIC_URL%/images/team/joseph-roberts.jpg" />
+                                <div class="team-overlay">
+                                    <div class="name">Joseph<br/>Roberts</div>
+                                    <div class="title">Sr. UI/UX Designer</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-xs-6 col-sm-6 col-md-4">
+                            <div class="team-image">
+                                <img src="%PUBLIC_URL%/images/team/orlando-lamerez.png" />
+                                <div class="team-overlay">
+                                    <div class="name">Orlando<br/>Lamerez</div>
+                                    <div class="title">Sr. Front-end Developer</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -302,8 +342,6 @@
                     <p style="text-align: right">
                         <a href="/careers.html#postings" class="button button-secondary-outline">See Job Postings</a>
                     </p>
-                </div>
-                <div class="six columns">
                 </div>
             </div>
         </div>
