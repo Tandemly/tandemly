@@ -1,6 +1,6 @@
 // Simple flexbox based 12 column grid system
 
-$gutter: 1rem;
+$gutter: 1.5rem;
 $half-gutter: $gutter / 2;
 
 @mixin col-x($prefix, $columns, $less-spacing:0) {
@@ -57,4 +57,5 @@ $half-gutter: $gutter / 2;
 
 .flex-item-center {
     align-self: center;
+    text-align: center;
 }
