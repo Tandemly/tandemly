@@ -11,11 +11,15 @@
 .container {
     // narrow width for content containers
     max-width: 906px;
-    @media (min-width: 1200px) {
+    @media (min-width: 1000px) {
         max-width: 1360px;
     }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 28bacda... fix: fix home layout, clean up
 .container_full {
   padding: 0 40px;
   @media (max-width: 550px) {
