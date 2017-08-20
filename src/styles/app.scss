@@ -85,13 +85,14 @@ section.hero {
     .hero-heading {
       text-transform: uppercase;
       font-weight: bold;
-      font-size: 6rem;
-      line-height: 6rem;
+    //   font-size: 6rem;
+    //   line-height: 6rem;
       margin-bottom: 0;
     }
 
     .lead {
-        font-size: 1.5em;
+        width: 80%;
+        font-size: 1.5rem;
         line-height: 1.2;
         font-weight: 300;
     }
@@ -295,11 +296,19 @@ ul.tag-list {
             .role-avatar {
                 float: right;
                 display: inline-block;
-                position: absolute;
+                position: relative;
                 right: 0px;
-                width: 90px;
-                height: 90px;
+                width: 40%;
+                height: auto;
                 z-index: 1;
+                min-height: 85px;
+
+                img {
+                    position: absolute;
+                    top: 4px;
+                    left: 15px;
+                    width: 85px;
+                }
 
                 &:before {
                     content: ' ';
@@ -307,8 +316,8 @@ ul.tag-list {
                     width: 85px;
                     height: 85px;
                     position: absolute;
-                    top: 0;
-                    left: -15px;
+                    top: 0px;
+                    left: 0px;
                     background-color: #fff;
                     border-radius: 50%;
                     z-index: -1;
@@ -394,7 +403,7 @@ ul.tag-list {
     top: 15px;
     right: 15px;
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 1rem;
     color: rgba($white, 0.7);
 }
 
