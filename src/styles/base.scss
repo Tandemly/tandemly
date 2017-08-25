@@ -143,7 +143,7 @@ section {
             line-height: 1.2;
             margin: 0px 0px 2.5rem;
             opacity: .8;
-            padding: 0 4rem;
+            // padding: 0 4rem;
         }
 
         h3 + p {
@@ -174,7 +174,7 @@ section {
         padding: 60px 0 45px;
 
         h2 {
-            margin: 1em 0px .5em;
+            margin: 1.2em 0px .5em;
             color: #fff;
             opacity: .7;
             font-weight: 700;
@@ -303,9 +303,13 @@ p.quote {
     color: #95b25b;
 }
 p.page-leader {
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: 200;
     line-height: 1.25;
+    width: 80%;
+    @media (max-width: 550px) {
+        width: 100%;
+    }
 }
 
 @media (max-width: 550px) {
