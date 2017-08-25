@@ -66,6 +66,7 @@ if (nav_cta) {
 }
 
 if (form) {
+    console.log('connecting form', form);
     form.addEventListener('submit', (ev) => {
         ev.preventDefault();
         const name = form.querySelector('input[name="name"]').value;

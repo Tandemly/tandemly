@@ -29,7 +29,7 @@ $white: #fff;
 
     .nav__list > li.cta {
         transition: all .3s ease-in-out;
-        width: 140px;
+        width: 160px;
         margin-left: 30px;
     }
 }
@@ -169,7 +169,7 @@ $white: #fff;
         display: block;
         letter-spacing: .06em;
         position: relative;
-        
+
         &:hover {
             color: #fff;
         }
@@ -177,7 +177,7 @@ $white: #fff;
         &.current {
             color: #fff;
             font-weight: 500;
-        
+
             &:before {
                 background: #1395ba;
                 height: 2px;
@@ -208,7 +208,7 @@ $white: #fff;
 				width: 30px;
 			}
 			&.current {
-				color: #fff; 
+				color: #fff;
 				font-weight: 500;
 				&:before {
 					background: $color_royal_heath_approx;
@@ -282,7 +282,7 @@ $white: #fff;
     top: 1px;
     width: 59px;
     z-index: 20;
-    
+
     &:after, &:before {
       content: '';
       left: 50%;
@@ -292,20 +292,20 @@ $white: #fff;
       transition: all .25s cubic-bezier(0.165, .84, .44, 1);
       width: 19px;
     }
-    
+
     &:before {
       background: #fff;
       height: 2px;
-      margin-top: 1px; 
+      margin-top: -1px;
     }
-    
+
     &:after {
       border: solid #fff;
       border-width: 2px 0;
       height: 12px;
       margin-top: -6px;
     }
-    
+
     &.open:before {
       background: #fff;
       -ms-transform: rotate(45deg);

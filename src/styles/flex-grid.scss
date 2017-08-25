@@ -59,3 +59,6 @@ $half-gutter: $gutter / 2;
     align-self: center;
     text-align: center;
 }
+.col-expand {
+    flex-grow: 1;
+}
