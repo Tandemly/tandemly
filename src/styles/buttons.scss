@@ -2,13 +2,13 @@
 
 // Customize buttons from skeleton
 .button {
-    font-size: 14px;
+    font-size: 0.9rem;
     height: auto;
     border-width: 2px;
     border-radius: 2px;
 
     &.button-primary {
-        font-size: 1em;
+        // font-size: 1em;
         font-weight: 400;
         transition: all 0.3s ease;
         background-color: $purple;
@@ -48,7 +48,7 @@
     }
 
     &.button-secondary {
-        font-size: 1em;
+        // font-size: 1em;
         font-weight: 400;
         transition: all 0.3s ease;
         background-color: $color_paradiso_approx;
@@ -88,7 +88,7 @@
     }
 
     &.button-white {
-        font-size: 1em;
+        // font-size: 1em;
         font-weight: 400;
         transition: all 0.3s ease;
         background-color: $white;
@@ -123,7 +123,7 @@
     }
 
     &.small {
-        font-size: .8em;
+        font-size: .8rem;
         padding: 10px;
         line-height: .9em;
         margin: 0;
