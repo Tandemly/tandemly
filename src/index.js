@@ -1,4 +1,4 @@
-/* global ga */
+/* global ga, mixpanel */
 /**
  * index.js
  */
@@ -48,6 +48,7 @@ const connect = (name, email) => {
     const params = qs.stringify({ name, email });
     const url = [connect_endpoint, '?', params].join('');
     galink(url, 'CTA Form Click', 'cta-form-click');
+    mixpanel.track('cta form click');
 }
 
 const galink = (url, eventName, label) => {
@@ -62,6 +63,7 @@ if (nav_cta) {
     nav_cta.addEventListener('click', (ev) => {
         ev.preventDefault();
         galink(ev.target.href, 'CTA Nav Click', 'cta-nav-click')
+        mixpanel.track('cta click');
     });
 }
 
@@ -92,3 +94,9 @@ const loop = () => {
 loop();
 
 
+window.addEventListener('load', () => {
+    mixpanel.track('page view', {
+        'page name' : document.title,
+        'url' : window.location.pathname
+    });
+});
